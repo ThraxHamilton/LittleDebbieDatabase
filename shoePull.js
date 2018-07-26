@@ -1,2 +1,3 @@
-const populateShoeButton = document.getElementById("shoes");
-populateShoeButton.addEventListener('click', populateShoeDB)
+
+const populateShoes = document.getElementById('shoes');
+populateShoes.addEventListener('click',setDB)

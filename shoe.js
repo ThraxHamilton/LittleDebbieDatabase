@@ -1,18 +1,25 @@
 console.log('cant stay away')
 
-function populateShoeDB() {
-let shoeStuff = []
-const createShoe = (name, manufacture, year) => {
-    const shoes = {
+// Empty array
+let shoeList = []
+// Create const to hold info from objects
+const createShoeList = (name, brand, year) => {
+    // Create const with object
+    const shoe = {
         name: name,
-        manufacture: manufacture,
-        year: year,
+        brand: brand,
+        year: year
     }
-    shoeStuff.push(shoes)
+    // Push 
+    shoeList.push(shoe)
+}
+createShoeList('Chucka Boot', 'Vans', '2012');
+createShoeList('Concord XI', 'Jordan', '1996');
 
-    const stringified = JSON.stringify(shoeStuff)
-    localStorage.setItem('shoes', stringified)
-}
-createShoe = ('Chucka Boot', 'Vans', '2012')
-createShoe = ('Jordan XI Concord', 'Nike, Jordan', '1996')
-}
+// Initial function with empty argument
+function setDB() {
+//    Stringify array
+   const stringified = JSON.stringify(shoeList)
+//    Put Into local storage
+    localStorage.setItem('shoes',stringified)
+ }
