@@ -2,7 +2,7 @@ console.log('cant stay away')
 
 // Empty array
 let shoeList = []
-// Create const to hold info from objects
+// Create  const function to hold info from objects
 const createShoeList = (name, brand, year) => {
     // Create const with object
     const shoe = {
